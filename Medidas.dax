@@ -1,0 +1,8 @@
+﻿DEFINE 
+---- MODEL MEASURES BEGIN ----
+MEASURE Medidas[Confirmados] = SUM(Hechos[Confirmados Diarios])
+MEASURE Medidas[Muertes] = SUM(Hechos[Muertes Diarias])
+MEASURE Medidas[Ratio Muertes] = DIVIDE([Muertes], [Confirmados], 0)
+MEASURE Medidas[Recuperados] = SUM(Hechos[Recuperados Diarios])
+---- MODEL MEASURES END ----
+
